@@ -20,7 +20,7 @@ get '/' do
   image.write(image_path)
   File.open(intensified_path, "w") {}
 
-  shake = params['shake']&.to_i || 10
+  shake = params['shake']&.to_i || 5
 
   puts "Converting..."
 
