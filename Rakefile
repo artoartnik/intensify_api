@@ -1,2 +1,2 @@
 # Rakefile
-require './intensify_api'
+require './intensify'

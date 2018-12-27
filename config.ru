@@ -1,2 +1,2 @@
-require './intensify_api'
+require './intensify'
 run Sinatra::Application
