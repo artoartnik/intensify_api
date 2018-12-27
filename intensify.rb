@@ -25,6 +25,7 @@ get '/' do
   end
 
   # set up files
+  image.resize('300x300>')
   image.write(image_path)
   File.open(intensified_path, "w") {}
 
