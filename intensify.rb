@@ -12,7 +12,7 @@ get '/' do
   return "Provide a valid image URL" unless params['url']
 
   image = MiniMagick::Image.open(params['url'])
-  shake = params['shake']&.to_i || 3
+  shake = params['shake'] ? [params['shake']&.to_i, 300].min : 3
 
   # set up paths
   image_path = "tmp/#{image.signature}_#{shake}"
